@@ -17,8 +17,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.description}>
           <p>
-            After 4:05pm
-            <code className={styles.code}>src/pages/index.tsx</code>
+            v1 12pm
           </p>
           <div>
             <a
