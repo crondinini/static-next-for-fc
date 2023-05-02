@@ -17,7 +17,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.description}>
           <p>
-            v1 12pm
+            v2 12:05pm
           </p>
           <div>
             <a
