@@ -17,7 +17,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.description}>
           <p>
-            Second PR - June 05 
+            Changes
           </p>
           <div>
             <a
