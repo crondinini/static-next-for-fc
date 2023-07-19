@@ -17,7 +17,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.description}>
           <p>
-            Changes 2
+            Changes separate branch
           </p>
           <div>
             <a
