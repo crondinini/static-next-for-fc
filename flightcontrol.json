@@ -1,0 +1,58 @@
+{
+  "envVariables": {},
+  "environments": [
+    {
+      "id": "production-te27fsr",
+      "name": "Production",
+      "region": "eu-west-3",
+      "source": {
+        "pr": false,
+        "branch": "main",
+        "trigger": "push"
+      },
+      "services": [
+        {
+          "id": "next-web-9GXs5z",
+          "name": "next-web",
+          "type": "static",
+          "basePath": ".",
+          "buildType": "nixpacks",
+          "envVariables": {},
+          "singlePageApp": false,
+          "outputDirectory": "out",
+          "versionHistoryCount": 10
+        }
+      ],
+      "envVariables": {}
+    },
+    {
+      "id": "preview-0e09f3z",
+      "name": "Preview",
+      "region": "eu-west-3",
+      "source": {
+        "pr": true,
+        "filter": {
+          "labels": [
+            "deploy"
+          ],
+          "toBranches": []
+        },
+        "trigger": "push"
+      },
+      "services": [
+        {
+          "id": "preview-web-3eGp0x",
+          "name": "preview-web",
+          "type": "static",
+          "basePath": ".",
+          "buildType": "nixpacks",
+          "envVariables": {},
+          "singlePageApp": false,
+          "outputDirectory": "out",
+          "versionHistoryCount": 10
+        }
+      ],
+      "envVariables": {}
+    }
+  ]
+}
