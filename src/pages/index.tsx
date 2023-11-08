@@ -17,7 +17,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.description}>
           <p>
-            Changes after codebuild folder changes
+            Changes after codebuild folder changes!
           </p>
           <div>
             <a
