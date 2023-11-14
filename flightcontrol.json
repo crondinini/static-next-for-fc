@@ -4,7 +4,7 @@
     {
       "id": "preview-0e09f3z",
       "name": "Preview",
-      "region": "eu-west-3",
+      "region": "sa-east-1",
       "source": {
         "pr": true,
         "filter": {
