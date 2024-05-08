@@ -1,24 +1,19 @@
 {
   "envVariables": {},
   "environments": [
-    {
-      "id": "preview-0e09f3z",
-      "name": "Preview",
-      "region": "sa-east-1",
+     {
+      "id": "production-te27fsr",
+      "name": "Production",
+      "region": "eu-west-3",
       "source": {
-        "pr": true,
-        "filter": {
-          "labels": [
-            "deploy"
-          ],
-          "toBranches": []
-        },
+        "pr": false,
+        "branch": "main",
         "trigger": "push"
       },
       "services": [
         {
-          "id": "preview-web-3eGp0x",
-          "name": "preview-web",
+          "id": "next-web-9GXs5z",
+          "name": "next-web",
           "type": "static",
           "basePath": ".",
           "buildType": "nixpacks",
