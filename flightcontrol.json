@@ -17,15 +17,14 @@
       },
       "services": [
         {
-          "id": "preview-web-3eGp0x",
-          "name": "preview-web",
-          "type": "static",
-          "basePath": ".",
-          "buildType": "nixpacks",
-          "envVariables": {},
-          "singlePageApp": false,
-          "outputDirectory": "out",
-          "versionHistoryCount": 10
+          "id": "db",
+          "name": "Database",
+          "type": "rds",
+          "engine": "postgres",
+          "engineVersion": "12",
+          "instanceSize": "db.t4g.micro",
+          "storage": 20,
+          "private": false
         }
       ],
       "envVariables": {}
