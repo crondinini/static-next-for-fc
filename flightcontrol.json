@@ -20,7 +20,7 @@
           "installCommand": "echo 'No install command'",
           "buildCommand": "cd packages/simple-html-page && node generateWebsite.js",
           "envVariables": {
-            "NIXPACKS_PKGS": "node"
+            "NIXPACKS_PKGS": "nodejs"
           },
           "singlePageApp": false,
           "outputDirectory": "packages/simple-html-page",
