@@ -17,9 +17,13 @@
           "type": "static",
           "basePath": ".",
           "buildType": "nixpacks",
-          "envVariables": {},
+          "installCommand": "echo 'No install command'",
+          "buildCommand": "cd packages/simple-html-page && node generateWebsite.js",
+          "envVariables": {
+            "NIXPACKS_PKGS": "node"
+          },
           "singlePageApp": false,
-          "outputDirectory": "out",
+          "outputDirectory": "packages/simple-html-page",
           "versionHistoryCount": 10
         }
       ],
