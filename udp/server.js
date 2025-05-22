@@ -2,7 +2,7 @@ const dgram = require("dgram");
 const server = dgram.createSocket("udp4");
 
 const PORT = 8080;
-const HOST = 0.0.0.0;
+const HOST = '0.0.0.0';
 
 // Handle incoming messages
 server.on("message", (msg, rinfo) => {
