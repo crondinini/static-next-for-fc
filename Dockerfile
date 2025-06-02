@@ -5,7 +5,7 @@ FROM node:18-alpine
 WORKDIR /app
 
 # Copy the server file to the container
-COPY server.js .
+COPY proxy.js .
 
 # Expose the ports
 EXPOSE 8080 8081
