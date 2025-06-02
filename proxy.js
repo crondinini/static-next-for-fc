@@ -15,7 +15,7 @@ server.on('message', async (msg, rinfo) => {
   const clientKey = `${rinfo.address}:${rinfo.port}`;
   // Extract PR info from first packet
   const prInfo = extractPRFromPayload(msg);
-  console.log({msg, rinfo});
+  console.log({msg: msg.toString(), rinfo, prInfo});
 
   // Check existing session
   if (sessionMap.has(clientKey)) {
