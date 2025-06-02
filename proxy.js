@@ -13,6 +13,8 @@ const healthServer = net.createServer((socket) => {
 
 server.on('message', async (msg, rinfo) => {
   const clientKey = `${rinfo.address}:${rinfo.port}`;
+  // Extract PR info from first packet
+  const prInfo = extractPRFromPayload(msg);
   console.log({msg, rinfo});
 
   // Check existing session
@@ -22,8 +24,6 @@ server.on('message', async (msg, rinfo) => {
     return;
   }
 
-  // Extract PR info from first packet
-  const prInfo = extractPRFromPayload(msg);
 
   if (prInfo && prInfo.prNumber) {
     try {
